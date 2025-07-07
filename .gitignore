@@ -1,49 +1,26 @@
-# C++ objects and libs
-*.slo
-*.lo
-*.o
-*.a
-*.la
-*.lai
-*.so
-*.dll
-*.dylib
 
-# Qt-es
-object_script.*.Release
-object_script.*.Debug
-*_plugin_import.cpp
-/.qmake.cache
-/.qmake.stash
-*.pro.user
-*.pro.user.*
-*.qbs.user
-*.qbs.user.*
-*.moc
-moc_*.cpp
-moc_*.h
-qrc_*.cpp
-ui_*.h
-*.qmlc
-*.jsc
-Makefile*
-*build-*
+build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.cmake/api/v1/reply/
 
-# Qt unit tests
-target_wrapper.*
+build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.cmake/api/v1/query/
 
-# QtCreator
-*.autosave
+build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.qt/
 
-# QtCreator Qml
-*.qmlproject.user
-*.qmlproject.user.*
+build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.qtc/package-manager/
 
-# QtCreator CMake
-CMakeLists.txt.user*
+build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.qtc_clangd/.cache/clangd/index/
 
-# QtCreator 4.8< compilation database 
-compile_commands.json
+build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.qtc_clangd/
 
-# QtCreator local machine specific files for imported projects
-*creator.user*
+build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/
+
+.cache/clangd/index/
+
+.idea/
+
+build/.cache/clangd/index/
+
+build/.cmake/api/v1/query/client-vscode/
+
+build/.cmake/api/v1/reply/
+
+build/
