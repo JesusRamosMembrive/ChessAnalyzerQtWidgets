@@ -41,6 +41,8 @@ qt_add_executable(ChessAnalyzePlayerQtWidgets
         tacticalanalysiscard.h
         endgameanalysiscard.cpp
         endgameanalysiscard.h
+        resumenanalisiscard.cpp
+        resumenanalisiscard.h
 )
 
 target_link_libraries(ChessAnalyzePlayerQtWidgets
