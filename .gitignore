@@ -47,3 +47,11 @@ compile_commands.json
 
 # QtCreator local machine specific files for imported projects
 *creator.user*
+
+.cache/clangd/index/
+
+build/.cache/clangd/index/
+
+build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.qtc_clangd/.cache/clangd/index/
+
+build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/CMakeFiles/
