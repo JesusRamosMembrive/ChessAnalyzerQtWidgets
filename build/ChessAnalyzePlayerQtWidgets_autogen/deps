@@ -45,6 +45,7 @@ ChessAnalyzePlayerQtWidgets_autogen/timestamp: \
 	C:/Program\ Files/CMake/share/cmake-4.1/Modules/Platform/Windows-windres.cmake \
 	C:/Program\ Files/CMake/share/cmake-4.1/Modules/Platform/Windows.cmake \
 	C:/Program\ Files/CMake/share/cmake-4.1/Modules/Platform/WindowsPaths.cmake \
+	C:/Qt/6.9.0/mingw_64/include/QtCore/QVector \
 	C:/Qt/6.9.0/mingw_64/include/QtCore/q17memory.h \
 	C:/Qt/6.9.0/mingw_64/include/QtCore/q20functional.h \
 	C:/Qt/6.9.0/mingw_64/include/QtCore/q20iterator.h \
@@ -167,6 +168,7 @@ ChessAnalyzePlayerQtWidgets_autogen/timestamp: \
 	C:/Qt/6.9.0/mingw_64/include/QtCore/qutf8stringview.h \
 	C:/Qt/6.9.0/mingw_64/include/QtCore/qvariant.h \
 	C:/Qt/6.9.0/mingw_64/include/QtCore/qvarlengtharray.h \
+	C:/Qt/6.9.0/mingw_64/include/QtCore/qvector.h \
 	C:/Qt/6.9.0/mingw_64/include/QtCore/qversiontagging.h \
 	C:/Qt/6.9.0/mingw_64/include/QtCore/qxptype_traits.h \
 	C:/Qt/6.9.0/mingw_64/include/QtCore/qyieldcpu.h \
@@ -622,6 +624,8 @@ ChessAnalyzePlayerQtWidgets_autogen/timestamp: \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
 	H:/Git_Overture/ChessAnalyzePlayerQtWidgets/CMakeLists.txt \
+	H:/Git_Overture/ChessAnalyzePlayerQtWidgets/benchmarkingcard.cpp \
+	H:/Git_Overture/ChessAnalyzePlayerQtWidgets/benchmarkingcard.h \
 	H:/Git_Overture/ChessAnalyzePlayerQtWidgets/build/CMakeFiles/4.1.0-rc1/CMakeCCompiler.cmake \
 	H:/Git_Overture/ChessAnalyzePlayerQtWidgets/build/CMakeFiles/4.1.0-rc1/CMakeCXXCompiler.cmake \
 	H:/Git_Overture/ChessAnalyzePlayerQtWidgets/build/CMakeFiles/4.1.0-rc1/CMakeRCCompiler.cmake \
@@ -629,8 +633,28 @@ ChessAnalyzePlayerQtWidgets_autogen/timestamp: \
 	H:/Git_Overture/ChessAnalyzePlayerQtWidgets/build/ChessAnalyzePlayerQtWidgets_autogen/moc_predefs.h \
 	H:/Git_Overture/ChessAnalyzePlayerQtWidgets/cardwidget.cpp \
 	H:/Git_Overture/ChessAnalyzePlayerQtWidgets/cardwidget.h \
+	H:/Git_Overture/ChessAnalyzePlayerQtWidgets/clutchperformancecard.cpp \
+	H:/Git_Overture/ChessAnalyzePlayerQtWidgets/clutchperformancecard.h \
+	H:/Git_Overture/ChessAnalyzePlayerQtWidgets/endgameanalysiscard.cpp \
+	H:/Git_Overture/ChessAnalyzePlayerQtWidgets/endgameanalysiscard.h \
+	H:/Git_Overture/ChessAnalyzePlayerQtWidgets/gamephasequalitycard.cpp \
+	H:/Git_Overture/ChessAnalyzePlayerQtWidgets/gamephasequalitycard.h \
 	H:/Git_Overture/ChessAnalyzePlayerQtWidgets/main.cpp \
 	H:/Git_Overture/ChessAnalyzePlayerQtWidgets/mainwindow.cpp \
 	H:/Git_Overture/ChessAnalyzePlayerQtWidgets/mainwindow.h \
+	H:/Git_Overture/ChessAnalyzePlayerQtWidgets/metricscard.cpp \
+	H:/Git_Overture/ChessAnalyzePlayerQtWidgets/metricscard.h \
+	H:/Git_Overture/ChessAnalyzePlayerQtWidgets/openingpatternscard.cpp \
+	H:/Git_Overture/ChessAnalyzePlayerQtWidgets/openingpatternscard.h \
+	H:/Git_Overture/ChessAnalyzePlayerQtWidgets/riskfactorscard.cpp \
+	H:/Git_Overture/ChessAnalyzePlayerQtWidgets/riskfactorscard.h \
+	H:/Git_Overture/ChessAnalyzePlayerQtWidgets/roianalysiscard.cpp \
+	H:/Git_Overture/ChessAnalyzePlayerQtWidgets/roianalysiscard.h \
+	H:/Git_Overture/ChessAnalyzePlayerQtWidgets/tacticalanalysiscard.cpp \
+	H:/Git_Overture/ChessAnalyzePlayerQtWidgets/tacticalanalysiscard.h \
+	H:/Git_Overture/ChessAnalyzePlayerQtWidgets/timemanagementcard.cpp \
+	H:/Git_Overture/ChessAnalyzePlayerQtWidgets/timemanagementcard.h \
+	H:/Git_Overture/ChessAnalyzePlayerQtWidgets/trendscard.cpp \
+	H:/Git_Overture/ChessAnalyzePlayerQtWidgets/trendscard.h \
 	c:/qt/6.9.0/mingw_64/lib/cmake/Qt6/qt.toolchain.cmake \
 	C:/Program\ Files/CMake/bin/cmake.exe

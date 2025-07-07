@@ -352,15 +352,81 @@
 	"HEADERS" : 
 	[
 		[
+			"H:/Git_Overture/ChessAnalyzePlayerQtWidgets/benchmarkingcard.h",
+			"MU",
+			"EWIEGA46WW/moc_benchmarkingcard.cpp",
+			null
+		],
+		[
 			"H:/Git_Overture/ChessAnalyzePlayerQtWidgets/cardwidget.h",
 			"MU",
 			"EWIEGA46WW/moc_cardwidget.cpp",
 			null
 		],
 		[
+			"H:/Git_Overture/ChessAnalyzePlayerQtWidgets/clutchperformancecard.h",
+			"MU",
+			"EWIEGA46WW/moc_clutchperformancecard.cpp",
+			null
+		],
+		[
+			"H:/Git_Overture/ChessAnalyzePlayerQtWidgets/endgameanalysiscard.h",
+			"MU",
+			"EWIEGA46WW/moc_endgameanalysiscard.cpp",
+			null
+		],
+		[
+			"H:/Git_Overture/ChessAnalyzePlayerQtWidgets/gamephasequalitycard.h",
+			"MU",
+			"EWIEGA46WW/moc_gamephasequalitycard.cpp",
+			null
+		],
+		[
 			"H:/Git_Overture/ChessAnalyzePlayerQtWidgets/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
+			null
+		],
+		[
+			"H:/Git_Overture/ChessAnalyzePlayerQtWidgets/metricscard.h",
+			"MU",
+			"EWIEGA46WW/moc_metricscard.cpp",
+			null
+		],
+		[
+			"H:/Git_Overture/ChessAnalyzePlayerQtWidgets/openingpatternscard.h",
+			"MU",
+			"EWIEGA46WW/moc_openingpatternscard.cpp",
+			null
+		],
+		[
+			"H:/Git_Overture/ChessAnalyzePlayerQtWidgets/riskfactorscard.h",
+			"MU",
+			"EWIEGA46WW/moc_riskfactorscard.cpp",
+			null
+		],
+		[
+			"H:/Git_Overture/ChessAnalyzePlayerQtWidgets/roianalysiscard.h",
+			"MU",
+			"EWIEGA46WW/moc_roianalysiscard.cpp",
+			null
+		],
+		[
+			"H:/Git_Overture/ChessAnalyzePlayerQtWidgets/tacticalanalysiscard.h",
+			"MU",
+			"EWIEGA46WW/moc_tacticalanalysiscard.cpp",
+			null
+		],
+		[
+			"H:/Git_Overture/ChessAnalyzePlayerQtWidgets/timemanagementcard.h",
+			"MU",
+			"EWIEGA46WW/moc_timemanagementcard.cpp",
+			null
+		],
+		[
+			"H:/Git_Overture/ChessAnalyzePlayerQtWidgets/trendscard.h",
+			"MU",
+			"EWIEGA46WW/moc_trendscard.cpp",
 			null
 		]
 	],
@@ -438,13 +504,68 @@
 	"SOURCES" : 
 	[
 		[
+			"H:/Git_Overture/ChessAnalyzePlayerQtWidgets/benchmarkingcard.cpp",
+			"MU",
+			null
+		],
+		[
 			"H:/Git_Overture/ChessAnalyzePlayerQtWidgets/cardwidget.cpp",
+			"MU",
+			null
+		],
+		[
+			"H:/Git_Overture/ChessAnalyzePlayerQtWidgets/clutchperformancecard.cpp",
+			"MU",
+			null
+		],
+		[
+			"H:/Git_Overture/ChessAnalyzePlayerQtWidgets/endgameanalysiscard.cpp",
+			"MU",
+			null
+		],
+		[
+			"H:/Git_Overture/ChessAnalyzePlayerQtWidgets/gamephasequalitycard.cpp",
 			"MU",
 			null
 		],
 		[ "H:/Git_Overture/ChessAnalyzePlayerQtWidgets/main.cpp", "MU", null ],
 		[
 			"H:/Git_Overture/ChessAnalyzePlayerQtWidgets/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"H:/Git_Overture/ChessAnalyzePlayerQtWidgets/metricscard.cpp",
+			"MU",
+			null
+		],
+		[
+			"H:/Git_Overture/ChessAnalyzePlayerQtWidgets/openingpatternscard.cpp",
+			"MU",
+			null
+		],
+		[
+			"H:/Git_Overture/ChessAnalyzePlayerQtWidgets/riskfactorscard.cpp",
+			"MU",
+			null
+		],
+		[
+			"H:/Git_Overture/ChessAnalyzePlayerQtWidgets/roianalysiscard.cpp",
+			"MU",
+			null
+		],
+		[
+			"H:/Git_Overture/ChessAnalyzePlayerQtWidgets/tacticalanalysiscard.cpp",
+			"MU",
+			null
+		],
+		[
+			"H:/Git_Overture/ChessAnalyzePlayerQtWidgets/timemanagementcard.cpp",
+			"MU",
+			null
+		],
+		[
+			"H:/Git_Overture/ChessAnalyzePlayerQtWidgets/trendscard.cpp",
 			"MU",
 			null
 		]

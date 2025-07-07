@@ -85,6 +85,105 @@ build CMakeFiles/ChessAnalyzePlayerQtWidgets.dir/cardwidget.cpp.obj: CXX_COMPILE
   OBJECT_DIR = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir
   OBJECT_FILE_DIR = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir
 
+build CMakeFiles/ChessAnalyzePlayerQtWidgets.dir/metricscard.cpp.obj: CXX_COMPILER__ChessAnalyzePlayerQtWidgets_unscanned_Debug H$:/Git_Overture/ChessAnalyzePlayerQtWidgets/metricscard.cpp || cmake_object_order_depends_target_ChessAnalyzePlayerQtWidgets
+  CONFIG = Debug
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir\metricscard.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets/build -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets/build/ChessAnalyzePlayerQtWidgets_autogen/include -isystem C:/Qt/6.9.0/mingw_64/include/QtCore -isystem C:/Qt/6.9.0/mingw_64/include -isystem C:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.9.0/mingw_64/include/QtWidgets -isystem C:/Qt/6.9.0/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir
+  OBJECT_FILE_DIR = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir
+
+build CMakeFiles/ChessAnalyzePlayerQtWidgets.dir/riskfactorscard.cpp.obj: CXX_COMPILER__ChessAnalyzePlayerQtWidgets_unscanned_Debug H$:/Git_Overture/ChessAnalyzePlayerQtWidgets/riskfactorscard.cpp || cmake_object_order_depends_target_ChessAnalyzePlayerQtWidgets
+  CONFIG = Debug
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir\riskfactorscard.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets/build -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets/build/ChessAnalyzePlayerQtWidgets_autogen/include -isystem C:/Qt/6.9.0/mingw_64/include/QtCore -isystem C:/Qt/6.9.0/mingw_64/include -isystem C:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.9.0/mingw_64/include/QtWidgets -isystem C:/Qt/6.9.0/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir
+  OBJECT_FILE_DIR = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir
+
+build CMakeFiles/ChessAnalyzePlayerQtWidgets.dir/trendscard.cpp.obj: CXX_COMPILER__ChessAnalyzePlayerQtWidgets_unscanned_Debug H$:/Git_Overture/ChessAnalyzePlayerQtWidgets/trendscard.cpp || cmake_object_order_depends_target_ChessAnalyzePlayerQtWidgets
+  CONFIG = Debug
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir\trendscard.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets/build -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets/build/ChessAnalyzePlayerQtWidgets_autogen/include -isystem C:/Qt/6.9.0/mingw_64/include/QtCore -isystem C:/Qt/6.9.0/mingw_64/include -isystem C:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.9.0/mingw_64/include/QtWidgets -isystem C:/Qt/6.9.0/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir
+  OBJECT_FILE_DIR = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir
+
+build CMakeFiles/ChessAnalyzePlayerQtWidgets.dir/roianalysiscard.cpp.obj: CXX_COMPILER__ChessAnalyzePlayerQtWidgets_unscanned_Debug H$:/Git_Overture/ChessAnalyzePlayerQtWidgets/roianalysiscard.cpp || cmake_object_order_depends_target_ChessAnalyzePlayerQtWidgets
+  CONFIG = Debug
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir\roianalysiscard.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets/build -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets/build/ChessAnalyzePlayerQtWidgets_autogen/include -isystem C:/Qt/6.9.0/mingw_64/include/QtCore -isystem C:/Qt/6.9.0/mingw_64/include -isystem C:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.9.0/mingw_64/include/QtWidgets -isystem C:/Qt/6.9.0/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir
+  OBJECT_FILE_DIR = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir
+
+build CMakeFiles/ChessAnalyzePlayerQtWidgets.dir/openingpatternscard.cpp.obj: CXX_COMPILER__ChessAnalyzePlayerQtWidgets_unscanned_Debug H$:/Git_Overture/ChessAnalyzePlayerQtWidgets/openingpatternscard.cpp || cmake_object_order_depends_target_ChessAnalyzePlayerQtWidgets
+  CONFIG = Debug
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir\openingpatternscard.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets/build -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets/build/ChessAnalyzePlayerQtWidgets_autogen/include -isystem C:/Qt/6.9.0/mingw_64/include/QtCore -isystem C:/Qt/6.9.0/mingw_64/include -isystem C:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.9.0/mingw_64/include/QtWidgets -isystem C:/Qt/6.9.0/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir
+  OBJECT_FILE_DIR = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir
+
+build CMakeFiles/ChessAnalyzePlayerQtWidgets.dir/gamephasequalitycard.cpp.obj: CXX_COMPILER__ChessAnalyzePlayerQtWidgets_unscanned_Debug H$:/Git_Overture/ChessAnalyzePlayerQtWidgets/gamephasequalitycard.cpp || cmake_object_order_depends_target_ChessAnalyzePlayerQtWidgets
+  CONFIG = Debug
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir\gamephasequalitycard.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets/build -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets/build/ChessAnalyzePlayerQtWidgets_autogen/include -isystem C:/Qt/6.9.0/mingw_64/include/QtCore -isystem C:/Qt/6.9.0/mingw_64/include -isystem C:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.9.0/mingw_64/include/QtWidgets -isystem C:/Qt/6.9.0/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir
+  OBJECT_FILE_DIR = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir
+
+build CMakeFiles/ChessAnalyzePlayerQtWidgets.dir/timemanagementcard.cpp.obj: CXX_COMPILER__ChessAnalyzePlayerQtWidgets_unscanned_Debug H$:/Git_Overture/ChessAnalyzePlayerQtWidgets/timemanagementcard.cpp || cmake_object_order_depends_target_ChessAnalyzePlayerQtWidgets
+  CONFIG = Debug
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir\timemanagementcard.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets/build -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets/build/ChessAnalyzePlayerQtWidgets_autogen/include -isystem C:/Qt/6.9.0/mingw_64/include/QtCore -isystem C:/Qt/6.9.0/mingw_64/include -isystem C:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.9.0/mingw_64/include/QtWidgets -isystem C:/Qt/6.9.0/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir
+  OBJECT_FILE_DIR = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir
+
+build CMakeFiles/ChessAnalyzePlayerQtWidgets.dir/clutchperformancecard.cpp.obj: CXX_COMPILER__ChessAnalyzePlayerQtWidgets_unscanned_Debug H$:/Git_Overture/ChessAnalyzePlayerQtWidgets/clutchperformancecard.cpp || cmake_object_order_depends_target_ChessAnalyzePlayerQtWidgets
+  CONFIG = Debug
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir\clutchperformancecard.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets/build -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets/build/ChessAnalyzePlayerQtWidgets_autogen/include -isystem C:/Qt/6.9.0/mingw_64/include/QtCore -isystem C:/Qt/6.9.0/mingw_64/include -isystem C:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.9.0/mingw_64/include/QtWidgets -isystem C:/Qt/6.9.0/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir
+  OBJECT_FILE_DIR = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir
+
+build CMakeFiles/ChessAnalyzePlayerQtWidgets.dir/benchmarkingcard.cpp.obj: CXX_COMPILER__ChessAnalyzePlayerQtWidgets_unscanned_Debug H$:/Git_Overture/ChessAnalyzePlayerQtWidgets/benchmarkingcard.cpp || cmake_object_order_depends_target_ChessAnalyzePlayerQtWidgets
+  CONFIG = Debug
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir\benchmarkingcard.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets/build -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets/build/ChessAnalyzePlayerQtWidgets_autogen/include -isystem C:/Qt/6.9.0/mingw_64/include/QtCore -isystem C:/Qt/6.9.0/mingw_64/include -isystem C:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.9.0/mingw_64/include/QtWidgets -isystem C:/Qt/6.9.0/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir
+  OBJECT_FILE_DIR = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir
+
+build CMakeFiles/ChessAnalyzePlayerQtWidgets.dir/tacticalanalysiscard.cpp.obj: CXX_COMPILER__ChessAnalyzePlayerQtWidgets_unscanned_Debug H$:/Git_Overture/ChessAnalyzePlayerQtWidgets/tacticalanalysiscard.cpp || cmake_object_order_depends_target_ChessAnalyzePlayerQtWidgets
+  CONFIG = Debug
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir\tacticalanalysiscard.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets/build -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets/build/ChessAnalyzePlayerQtWidgets_autogen/include -isystem C:/Qt/6.9.0/mingw_64/include/QtCore -isystem C:/Qt/6.9.0/mingw_64/include -isystem C:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.9.0/mingw_64/include/QtWidgets -isystem C:/Qt/6.9.0/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir
+  OBJECT_FILE_DIR = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir
+
+build CMakeFiles/ChessAnalyzePlayerQtWidgets.dir/endgameanalysiscard.cpp.obj: CXX_COMPILER__ChessAnalyzePlayerQtWidgets_unscanned_Debug H$:/Git_Overture/ChessAnalyzePlayerQtWidgets/endgameanalysiscard.cpp || cmake_object_order_depends_target_ChessAnalyzePlayerQtWidgets
+  CONFIG = Debug
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir\endgameanalysiscard.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets/build -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets -IH:/Git_Overture/ChessAnalyzePlayerQtWidgets/build/ChessAnalyzePlayerQtWidgets_autogen/include -isystem C:/Qt/6.9.0/mingw_64/include/QtCore -isystem C:/Qt/6.9.0/mingw_64/include -isystem C:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.9.0/mingw_64/include/QtWidgets -isystem C:/Qt/6.9.0/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir
+  OBJECT_FILE_DIR = CMakeFiles\ChessAnalyzePlayerQtWidgets.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target ChessAnalyzePlayerQtWidgets
@@ -93,7 +192,7 @@ build CMakeFiles/ChessAnalyzePlayerQtWidgets.dir/cardwidget.cpp.obj: CXX_COMPILE
 #############################################
 # Link the executable ChessAnalyzePlayerQtWidgets.exe
 
-build ChessAnalyzePlayerQtWidgets.exe: CXX_EXECUTABLE_LINKER__ChessAnalyzePlayerQtWidgets_Debug CMakeFiles/ChessAnalyzePlayerQtWidgets.dir/ChessAnalyzePlayerQtWidgets_autogen/mocs_compilation.cpp.obj CMakeFiles/ChessAnalyzePlayerQtWidgets.dir/main.cpp.obj CMakeFiles/ChessAnalyzePlayerQtWidgets.dir/mainwindow.cpp.obj CMakeFiles/ChessAnalyzePlayerQtWidgets.dir/cardwidget.cpp.obj | C$:/Qt/6.9.0/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.9.0/mingw_64/lib/libQt6Gui.a C$:/Qt/6.9.0/mingw_64/lib/libQt6Core.a C$:/Qt/6.9.0/mingw_64/lib/libQt6EntryPoint.a || ChessAnalyzePlayerQtWidgets_autogen ChessAnalyzePlayerQtWidgets_autogen_timestamp_deps
+build ChessAnalyzePlayerQtWidgets.exe: CXX_EXECUTABLE_LINKER__ChessAnalyzePlayerQtWidgets_Debug CMakeFiles/ChessAnalyzePlayerQtWidgets.dir/ChessAnalyzePlayerQtWidgets_autogen/mocs_compilation.cpp.obj CMakeFiles/ChessAnalyzePlayerQtWidgets.dir/main.cpp.obj CMakeFiles/ChessAnalyzePlayerQtWidgets.dir/mainwindow.cpp.obj CMakeFiles/ChessAnalyzePlayerQtWidgets.dir/cardwidget.cpp.obj CMakeFiles/ChessAnalyzePlayerQtWidgets.dir/metricscard.cpp.obj CMakeFiles/ChessAnalyzePlayerQtWidgets.dir/riskfactorscard.cpp.obj CMakeFiles/ChessAnalyzePlayerQtWidgets.dir/trendscard.cpp.obj CMakeFiles/ChessAnalyzePlayerQtWidgets.dir/roianalysiscard.cpp.obj CMakeFiles/ChessAnalyzePlayerQtWidgets.dir/openingpatternscard.cpp.obj CMakeFiles/ChessAnalyzePlayerQtWidgets.dir/gamephasequalitycard.cpp.obj CMakeFiles/ChessAnalyzePlayerQtWidgets.dir/timemanagementcard.cpp.obj CMakeFiles/ChessAnalyzePlayerQtWidgets.dir/clutchperformancecard.cpp.obj CMakeFiles/ChessAnalyzePlayerQtWidgets.dir/benchmarkingcard.cpp.obj CMakeFiles/ChessAnalyzePlayerQtWidgets.dir/tacticalanalysiscard.cpp.obj CMakeFiles/ChessAnalyzePlayerQtWidgets.dir/endgameanalysiscard.cpp.obj | C$:/Qt/6.9.0/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.9.0/mingw_64/lib/libQt6Gui.a C$:/Qt/6.9.0/mingw_64/lib/libQt6Core.a C$:/Qt/6.9.0/mingw_64/lib/libQt6EntryPoint.a || ChessAnalyzePlayerQtWidgets_autogen ChessAnalyzePlayerQtWidgets_autogen_timestamp_deps
   CONFIG = Debug
   FLAGS = -g
   LINK_FLAGS = -mwindows

@@ -19,6 +19,28 @@ qt_add_executable(ChessAnalyzePlayerQtWidgets
         mainwindow.ui
         cardwidget.cpp
         cardwidget.h
+        metricscard.cpp
+        metricscard.h
+        riskfactorscard.cpp
+        riskfactorscard.h
+        trendscard.cpp
+        trendscard.h
+        roianalysiscard.cpp
+        roianalysiscard.h
+        openingpatternscard.cpp
+        openingpatternscard.h
+        gamephasequalitycard.cpp
+        gamephasequalitycard.h
+        timemanagementcard.cpp
+        timemanagementcard.h
+        clutchperformancecard.cpp
+        clutchperformancecard.h
+        benchmarkingcard.cpp
+        benchmarkingcard.h
+        tacticalanalysiscard.cpp
+        tacticalanalysiscard.h
+        endgameanalysiscard.cpp
+        endgameanalysiscard.h
 )
 
 target_link_libraries(ChessAnalyzePlayerQtWidgets
