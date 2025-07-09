@@ -1,11 +1,13 @@
 #pragma once
 
+#include "formmainpagewidget.h"
 #include <QMainWindow>
 #include <QStackedWidget>
 #include <QWidget>
 #include <QPushButton>
 #include <QLineEdit>
 #include <QLabel>
+#include <formmainpagewidget.h>
 
 class MainWindow : public QMainWindow
 {
@@ -24,6 +26,7 @@ private:
     QWidget *mainPage;
     QWidget *resultsPage;
     QLineEdit *usernameInput;
+    FormMainPageWidget *mainPageWidget;
     
     void setupMainPage();
     void setupResultsPage();

@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Assets/Images/a09228b5-5f86-4e69-9469-16f9e6651772.png</file>
+        <file>Assets/Images/b3e28783-e3f5-4367-8d3c-30cd9c211969.png</file>
+        <file>Assets/Images/ef6c43c4-099e-4503-b8e6-fd69b4e59b9f.png</file>
+        <file>Assets/Images/entropia.png</file>
+    </qresource>
+</RCC>

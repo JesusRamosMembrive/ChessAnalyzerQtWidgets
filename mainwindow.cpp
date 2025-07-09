@@ -22,24 +22,28 @@
 #include <QPushButton>
 #include <QLineEdit>
 #include <QString>
+#include <QPalette>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
 {
     // Crear el QStackedWidget como widget central
     stackedWidget = new QStackedWidget(this);
+    stackedWidget->setStyleSheet("background-color:rgb(20,20,20)");
     setCentralWidget(stackedWidget);
     
     // Crear las páginas
-    mainPage = new QWidget();
+    // mainPage = new QWidget();
     resultsPage = new QWidget();
+
+    mainPageWidget = new FormMainPageWidget();
     
     // Configurar cada página
-    setupMainPage();
+    // setupMainPage();<
     setupResultsPage();
     
     // Añadir las páginas al stack
-    stackedWidget->addWidget(mainPage);    // Índice 0
+    stackedWidget->addWidget(mainPageWidget);    // Índice 0
     stackedWidget->addWidget(resultsPage); // Índice 1
     
     // Mostrar la página principal al inicio
@@ -59,7 +63,7 @@ void MainWindow::setupMainPage()
     
     // Logo (lado izquierdo)
     auto *logoLayout = new QHBoxLayout();
-    auto *logoIcon = new QLabel("♛");
+    auto *logoIcon = new QLabel("icon to be placed");
     logoIcon->setStyleSheet(
         "color: #2ECC71;"
         "font-size: 24px;"
@@ -99,7 +103,7 @@ void MainWindow::setupMainPage()
     
     // Sección New Analysis
     auto *analysisWidget = new QWidget();
-    analysisWidget->setFixedSize(400, 180);
+    analysisWidget->setFixedSize(427, 220);
     analysisWidget->setStyleSheet(
         "QWidget {"
         "   background-color: #3A4B5C;"
@@ -110,11 +114,12 @@ void MainWindow::setupMainPage()
     
     auto *analysisLayout = new QVBoxLayout(analysisWidget);
     analysisLayout->setSpacing(15);
+    analysisLayout->setContentsMargins(20, 20, 20, 20);
     
     // Icono y título de New Analysis
     auto *analysisHeaderLayout = new QHBoxLayout();
-    auto *searchIcon = new QLabel("🔍");
-    searchIcon->setStyleSheet("font-size: 18px;");
+    auto *searchIcon = new QLabel("Icon lens to be placed");
+    searchIcon->setStyleSheet("font-size: 18px; color: white;");
     
     auto *analysisTitle = new QLabel("New Analysis");
     analysisTitle->setStyleSheet("color: white; font-size: 18px; font-weight: bold;");
@@ -131,6 +136,8 @@ void MainWindow::setupMainPage()
     
     // Campo de entrada
     usernameInput = new QLineEdit();
+    usernameInput->setFixedSize(387, 40);
+
     usernameInput->setPlaceholderText("Enter chess.com username");
     usernameInput->setStyleSheet(
         "QLineEdit {"
@@ -149,10 +156,16 @@ void MainWindow::setupMainPage()
         "   background-color: #526A80;"
         "}"
     );
+    QPalette pal = usernameInput->palette();
+    pal.setColor(QPalette::PlaceholderText, QColor("#BDC3C7"));
+    usernameInput->setPalette(pal);
     analysisLayout->addWidget(usernameInput);
+    // espacio pequeño entre el input y el botón
+    analysisLayout->addSpacing(10);
     
     // Botón Start Analysis
     auto *startBtn = new QPushButton("Start Analysis");
+    startBtn->setFixedSize(387, 40);
     startBtn->setStyleSheet(
         "QPushButton {"
         "   background-color: #27AE60;"
@@ -211,7 +224,7 @@ void MainWindow::setupMainPage()
     
     // Header de Analyzed Players
     auto *playersHeaderLayout = new QHBoxLayout();
-    auto *playersIcon = new QLabel("👥");
+    auto *playersIcon = new QLabel("Icon users to be placed");
     playersIcon->setStyleSheet("font-size: 18px;");
     
     auto *playersTitle = new QLabel("Analyzed Players");
@@ -228,7 +241,7 @@ void MainWindow::setupMainPage()
     emptyStateLayout->setSpacing(10);
     
     // Icono de usuario
-    auto *userIcon = new QLabel("👤");
+    auto *userIcon = new QLabel("Icon user to be placed");
     userIcon->setAlignment(Qt::AlignCenter);
     userIcon->setStyleSheet("font-size: 48px; color: #7F8C8D; margin: 20px 0 10px 0;");
     

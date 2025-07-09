@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormMainPageWidget</class>
+ <widget class="QWidget" name="FormMainPageWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1311</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="verticalSpacing">
+    <number>17</number>
+   </property>
+   <item row="3" column="0">
+    <widget class="QFrame" name="frameCards">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>250</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QFrame" name="frameOpeningCard">
+        <property name="minimumSize">
+         <size>
+          <width>230</width>
+          <height>170</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>230</width>
+          <height>170</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(40,40,40);
+border: 1px solid rgb(113, 113, 113);
+border-radius: 8px;
+
+color: #FFFFFF;
+</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::NoFrame</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="1" column="0" alignment="Qt::AlignmentFlag::AlignHCenter">
+          <widget class="QLabel" name="labelOpeningTitle">
+           <property name="styleSheet">
+            <string notr="true">color: white; font-size: 16px; font-weight: bold; margin-left: 10px;
+border-color:transparent;</string>
+           </property>
+           <property name="text">
+            <string>Opening Entropy</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0" alignment="Qt::AlignmentFlag::AlignHCenter">
+          <widget class="QLabel" name="openingImage">
+           <property name="maximumSize">
+            <size>
+             <width>60</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-color:transparent;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="assets.qrc">:/Assets/Images/entropia.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="labelOpeningExplication">
+           <property name="styleSheet">
+            <string notr="true">color: white; font-size: 16px; 
+ margin-left: 10px;
+border-color:transparent;</string>
+           </property>
+           <property name="text">
+            <string>Analyze opening diversity vs ELO consistency</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QFrame" name="frameMoveTimingCard">
+        <property name="minimumSize">
+         <size>
+          <width>230</width>
+          <height>170</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>230</width>
+          <height>170</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(40,40,40);
+border: 1px solid rgb(113, 113, 113);
+border-radius: 8px;
+
+color: #FFFFFF;
+</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::NoFrame</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_6">
+         <item row="0" column="0" alignment="Qt::AlignmentFlag::AlignHCenter">
+          <widget class="QLabel" name="moveTimingImage">
+           <property name="maximumSize">
+            <size>
+             <width>60</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-color:transparent;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="assets.qrc">:/Assets/Images/a09228b5-5f86-4e69-9469-16f9e6651772.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="labelMoveTimingTItle">
+           <property name="styleSheet">
+            <string notr="true">color: white; font-size: 16px; font-weight: bold; margin-left: 10px;
+border-color:transparent;</string>
+           </property>
+           <property name="text">
+            <string>Move Timing</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="labelMoveExplication">
+           <property name="styleSheet">
+            <string notr="true">color: white; font-size: 16px; 
+ margin-left: 10px;
+border-color:transparent;</string>
+           </property>
+           <property name="text">
+            <string>Detect suspicious timing patterns</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QFrame" name="frameWinLossCard">
+        <property name="minimumSize">
+         <size>
+          <width>230</width>
+          <height>170</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>230</width>
+          <height>170</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(40,40,40);
+border: 1px solid rgb(113, 113, 113);
+border-radius: 8px;
+
+color: #FFFFFF;
+</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::NoFrame</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_7">
+         <item row="2" column="0">
+          <widget class="QLabel" name="labelWinLossExplication">
+           <property name="styleSheet">
+            <string notr="true">color: white; font-size: 16px; 
+ margin-left: 10px;
+border-color:transparent;</string>
+           </property>
+           <property name="text">
+            <string>Comprehensive game outcome analysis</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="labelWinLossTitle">
+           <property name="styleSheet">
+            <string notr="true">color: white; font-size: 16px; font-weight: bold; margin-left: 10px;
+border-color:transparent;</string>
+           </property>
+           <property name="text">
+            <string>Win/Loss Stats</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0" alignment="Qt::AlignmentFlag::AlignHCenter">
+          <widget class="QLabel" name="winLossImage">
+           <property name="maximumSize">
+            <size>
+             <width>60</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-color:transparent;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="assets.qrc">:/Assets/Images/b3e28783-e3f5-4367-8d3c-30cd9c211969.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+        <zorder>labelWinLossTitle</zorder>
+        <zorder>labelWinLossExplication</zorder>
+        <zorder>winLossImage</zorder>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QFrame" name="frameComebackCard">
+        <property name="minimumSize">
+         <size>
+          <width>230</width>
+          <height>170</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>230</width>
+          <height>170</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(40,40,40);
+border: 1px solid rgb(113, 113, 113);
+border-radius: 8px;
+
+color: #FFFFFF;
+</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::NoFrame</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_8">
+         <item row="1" column="0">
+          <widget class="QLabel" name="labelComeBackTitle">
+           <property name="styleSheet">
+            <string notr="true">color: white; font-size: 16px; font-weight: bold; margin-left: 10px;
+border-color:transparent;</string>
+           </property>
+           <property name="text">
+            <string>Comeback Analysis</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0" alignment="Qt::AlignmentFlag::AlignHCenter">
+          <widget class="QLabel" name="comebackImage">
+           <property name="maximumSize">
+            <size>
+             <width>60</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-color:transparent;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="assets.qrc">:/Assets/Images/ef6c43c4-099e-4503-b8e6-fd69b4e59b9f.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="labelComebackExplication">
+           <property name="styleSheet">
+            <string notr="true">color: white; font-size: 16px; 
+ margin-left: 10px;
+border-color:transparent;</string>
+           </property>
+           <property name="text">
+            <string>Identify dramatic game turnarounds</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QFrame" name="headerLayoutFrame">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <property name="verticalSpacing">
+       <number>6</number>
+      </property>
+      <item row="0" column="0" alignment="Qt::AlignmentFlag::AlignHCenter">
+       <widget class="QLabel" name="labelTitleHeader">
+        <property name="styleSheet">
+         <string notr="true">color: white; font-size: 28px; font-weight: bold; margin-left: 10px;</string>
+        </property>
+        <property name="text">
+         <string>Analyze Chess Performance</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" alignment="Qt::AlignmentFlag::AlignHCenter">
+       <widget class="QLabel" name="labelSubTItleHeader">
+        <property name="styleSheet">
+         <string notr="true">color: gray; font-size: 15px; font-weight: regular; margin-left: 10px;</string>
+        </property>
+        <property name="text">
+         <string>Discover patterns, detect anomalies, and gain insights from chess.com game data</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QFrame" name="analyzedPlayersFrame">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_10">
+      <item row="0" column="0">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Policy::Maximum</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="1">
+       <widget class="QFrame" name="frameAnalyzedPlayer">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>230</width>
+          <height>170</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(40,40,40);
+border: 1px solid rgb(113, 113, 113);
+border-radius: 8px;
+
+color: #FFFFFF;
+</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::NoFrame</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Policy::Maximum</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="0" alignment="Qt::AlignmentFlag::AlignHCenter">
+    <widget class="QFrame" name="newAnalysisFrame">
+     <property name="minimumSize">
+      <size>
+       <width>500</width>
+       <height>200</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>500</width>
+       <height>200</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(40,40,40);
+border: 1px solid rgb(113, 113, 113);
+border-radius: 8px;
+
+color: #FFFFFF;
+</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="1" column="0" alignment="Qt::AlignmentFlag::AlignHCenter">
+       <widget class="QLabel" name="labelSubTitleNewAnalysis">
+        <property name="styleSheet">
+         <string notr="true">color: white; font-size: 16px; font-weight: bold; margin-left: 10px;
+border-color:transparent;</string>
+        </property>
+        <property name="text">
+         <string>Enter a chess.com username to analyze</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QPushButton" name="pushButtonStartAnalysis">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>44</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>350</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+          background-color: #27AE60;
+           color: #FFFFFF;
+          border: none;
+          border-radius: 6px;
+          padding: 12px;
+          font-size: 14px;
+          font-weight: bold;
+          min-height: 20px;
+       }
+       QPushButton:hover {
+          background-color: #2ECC71;
+       }
+       QPushButton:pressed {
+          background-color: #229954;
+       }</string>
+        </property>
+        <property name="text">
+         <string>Start analysis</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLineEdit" name="lineEditNewUser">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>350</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+          background-color: #485A6B;
+          border: 1px solid #5D6D7E;
+          border-radius: 6px;
+          padding: 12px;
+          color: #FFFFFF;
+          font-size: 14px;
+       }
+       QLineEdit::placeholder {
+          color: #BDC3C7;
+       }
+       QLineEdit:focus {
+          border: 2px solid #3498DB;
+          background-color: #526A80;
+       }</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" alignment="Qt::AlignmentFlag::AlignHCenter">
+       <widget class="QLabel" name="labelTitleNewAnalysis">
+        <property name="styleSheet">
+         <string notr="true">color: white; font-size: 25px; font-weight: bold; margin-left: 10px;
+border-color:transparent;</string>
+        </property>
+        <property name="text">
+         <string>New Analysis</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="Line" name="lineSeparationHeader">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>1</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: white;</string>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="assets.qrc"/>
+ </resources>
+ <connections/>
+</ui>
