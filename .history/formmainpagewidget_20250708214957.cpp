@@ -1,6 +1,5 @@
 #include "formmainpagewidget.h"
 #include "ui_formmainpagewidget.h"
-#include "connectionerrorwidget.h"
 #include <QHBoxLayout>
 #include <QVBoxLayout>
 #include <QLabel>
@@ -23,8 +22,6 @@ FormMainPageWidget::FormMainPageWidget(QWidget *parent)
 {
     ui->setupUi(this);
 
-    // Por ahora, asumimos que no hay conexión al backend y mostramos el placeholder
-    showConnectionErrorPlaceholder();
 }
 
 FormMainPageWidget::~FormMainPageWidget()
@@ -69,40 +66,4 @@ QWidget* FormMainPageWidget::createAnalysisCard(const QString &title, const QStr
     layout->addWidget(descLabel);
     layout->addStretch();
     return card;
-}
-
-void FormMainPageWidget::showConnectionErrorPlaceholder()
-{
-    if (!ui || !ui->frameAnalyzedPlayer)
-        return;
-
-    // Si el frame ya tiene un layout, lo limpiamos
-    QLayout *oldLayout = ui->frameAnalyzedPlayer->layout();
-    if (oldLayout) {
-        QLayoutItem *child;
-        while ((child = oldLayout->takeAt(0)) != nullptr) {
-            if (child->widget()) {
-                child->widget()->deleteLater();
-            }
-            delete child;
-        }
-        delete oldLayout;
-    }
-
-    // Nuevo layout centrado
-    auto *layout = new QVBoxLayout(ui->frameAnalyzedPlayer);
-    layout->setContentsMargins(32, 32, 32, 32);
-    layout->setAlignment(Qt::AlignCenter);
-
-    // Crear el widget de error
-    auto *errorWidget = new ConnectionErrorWidget(ui->frameAnalyzedPlayer);
-    connect(errorWidget, &ConnectionErrorWidget::retryClicked, this, &FormMainPageWidget::onRetryConnection);
-
-    layout->addWidget(errorWidget);
-}
-
-void FormMainPageWidget::onRetryConnection()
-{
-    // Aquí se podría volver a intentar la conexión. Por ahora, simplemente volvemos a mostrar el placeholder
-    showConnectionErrorPlaceholder();
 }

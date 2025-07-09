@@ -57,9 +57,6 @@ target_link_libraries(ChessAnalyzePlayerQtWidgets
         Qt::Widgets
 )
 
-# Incluir el directorio binario (donde AUTOUIC coloca ui_*.h) en las rutas de búsqueda
-target_include_directories(ChessAnalyzePlayerQtWidgets PRIVATE ${CMAKE_CURRENT_BINARY_DIR})
-
 include(GNUInstallDirs)
 
 install(TARGETS ChessAnalyzePlayerQtWidgets

@@ -25,14 +25,6 @@ private:
 
     void setupMainPage();
     QWidget* createAnalysisCard(const QString &title, const QString &description, const QString &iconText, const QString &iconColor);
-
-    // Muestra un placeholder con error de conexión dentro del frame de jugadores analizados
-    void showConnectionErrorPlaceholder();
-
-private slots:
-    void onRetryConnection();
-
-private:
     QLineEdit *usernameInput;
 };
 

@@ -31,8 +31,6 @@ private:
 
 private slots:
     void onRetryConnection();
-
-private:
     QLineEdit *usernameInput;
 };
 

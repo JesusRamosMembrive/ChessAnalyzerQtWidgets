@@ -78,6 +78,7 @@ void FormMainPageWidget::showConnectionErrorPlaceholder()
 
     // Si el frame ya tiene un layout, lo limpiamos
     QLayout *oldLayout = ui->frameAnalyzedPlayer->layout();
+    
     if (oldLayout) {
         QLayoutItem *child;
         while ((child = oldLayout->takeAt(0)) != nullptr) {

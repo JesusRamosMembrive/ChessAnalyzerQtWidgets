@@ -46,7 +46,6 @@ qt6_add_executable(ChessAnalyzePlayerQtWidgets
         resumenanalisiscard.cpp
         resumenanalisiscard.h
         formmainpagewidget.h formmainpagewidget.cpp formmainpagewidget.ui
-        connectionerrorwidget.cpp
         assets.qrc
         ${APP_RESOURCES}
 )
@@ -56,9 +55,6 @@ target_link_libraries(ChessAnalyzePlayerQtWidgets
         Qt::Core
         Qt::Widgets
 )
-
-# Incluir el directorio binario (donde AUTOUIC coloca ui_*.h) en las rutas de búsqueda
-target_include_directories(ChessAnalyzePlayerQtWidgets PRIVATE ${CMAKE_CURRENT_BINARY_DIR})
 
 include(GNUInstallDirs)
 
