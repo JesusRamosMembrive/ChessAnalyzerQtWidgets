@@ -22,14 +22,6 @@ int main(int argc, char *argv[])
                          const char *names[] = {"Unknown", "Online", "Offline"};
                          qDebug() << "[ServerStatusManager] Status changed to" << names[static_cast<int>(s)];
                      });
-
-    QObject::connect(statusMgr, &ServerStatusManager::playersUpdated,
-                     [](const QList<PlayerInfo> &players) {
-                         qDebug() << "[Players] Lista recibida (" << players.size() << ")";
-                         for (const auto &p : players) {
-                             qDebug() << " •" << p.username << p.status << p.progress << "%";
-                         }
-                     });
     MainWindow w;
     w.show();
     return a.exec();

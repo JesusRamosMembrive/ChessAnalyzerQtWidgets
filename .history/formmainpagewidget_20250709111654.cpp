@@ -114,38 +114,6 @@ void FormMainPageWidget::onRetryConnection()
 }
 
 // -----------------------------------------------------------------------------
-void FormMainPageWidget::showNoPlayersPlaceholder()
-{
-    if (!ui || !ui->frameAnalyzedPlayer)
-        return;
-
-    clearFrame(ui->frameAnalyzedPlayer);
-
-    auto *layout = new QVBoxLayout(ui->frameAnalyzedPlayer);
-    layout->setContentsMargins(32, 32, 32, 32);
-    layout->setAlignment(Qt::AlignCenter);
-
-    // Icono usuario genérico
-    auto *iconLabel = new QLabel("👤", ui->frameAnalyzedPlayer);
-    iconLabel->setAlignment(Qt::AlignCenter);
-    iconLabel->setStyleSheet("font-size: 48px; color: #7F8C8D; margin: 20px 0 10px 0;");
-
-    // Texto principal
-    auto *titleLabel = new QLabel(tr("No players analyzed"), ui->frameAnalyzedPlayer);
-    titleLabel->setAlignment(Qt::AlignCenter);
-    titleLabel->setStyleSheet("color: white; font-size: 16px; font-weight: bold;");
-
-    // Subtexto
-    auto *subtitleLabel = new QLabel(tr("Start analyzing a player to see results here"), ui->frameAnalyzedPlayer);
-    subtitleLabel->setAlignment(Qt::AlignCenter);
-    subtitleLabel->setStyleSheet("color: #BDC3C7; font-size: 13px;");
-
-    layout->addWidget(iconLabel);
-    layout->addWidget(titleLabel);
-    layout->addWidget(subtitleLabel);
-}
-
-// -----------------------------------------------------------------------------
 void FormMainPageWidget::clearFrame(QFrame *frame)
 {
     if (!frame) return;
@@ -167,7 +135,7 @@ void FormMainPageWidget::onPlayersUpdated(const QList<PlayerInfo> &players)
     clearFrame(ui->frameAnalyzedPlayer);
 
     if (players.isEmpty()) {
-        showNoPlayersPlaceholder();
+        showConnectionErrorPlaceholder(); // o placeholder vacío si no hay jugadores
         return;
     }
 

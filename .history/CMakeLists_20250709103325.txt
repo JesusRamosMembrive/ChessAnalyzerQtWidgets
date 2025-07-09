@@ -49,8 +49,6 @@ qt6_add_executable(ChessAnalyzePlayerQtWidgets
         connectionerrorwidget.cpp
         serverstatusmanager.cpp
         serverstatusmanager.h
-        playercardwidget.cpp
-        playercardwidget.h
         assets.qrc
         ${APP_RESOURCES}
         chessanalyzerclient.h

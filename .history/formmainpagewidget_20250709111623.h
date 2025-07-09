@@ -33,9 +33,6 @@ private:
     // Muestra un placeholder con error de conexión dentro del frame de jugadores analizados
     void showConnectionErrorPlaceholder();
 
-    // Muestra placeholder "No players analyzed" cuando la lista esté vacía.
-    void showNoPlayersPlaceholder();
-
 private slots:
     void onRetryConnection();
 
