@@ -197,7 +197,7 @@ void ServerStatusManager::analyzePlayer(const QString &username)
     for (auto &p : m_players) {
         if (p.username.compare(username, Qt::CaseInsensitive) == 0) {
             found = true;
-            p.status = "queued"; // Changed from "pending" to "queued"
+            p.status = "pending";
             p.progress = 0;
             p.doneGames = 0;
             break;
@@ -206,7 +206,7 @@ void ServerStatusManager::analyzePlayer(const QString &username)
     if (!found) {
         PlayerInfo p;
         p.username = username;
-        p.status = "queued"; // Changed from "pending" to "queued"
+        p.status = "pending";
         p.progress = 0;
         p.totalGames = 0;
         p.doneGames = 0;

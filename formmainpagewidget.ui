@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>876</width>
-    <height>854</height>
+    <height>843</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -36,7 +36,7 @@
     <number>0</number>
    </property>
    <property name="verticalSpacing">
-    <number>17</number>
+    <number>6</number>
    </property>
    <item row="1" column="0">
     <widget class="Line" name="lineSeparationHeader">
@@ -110,7 +110,7 @@
    <item row="3" column="0">
     <widget class="QFrame" name="frameCards">
      <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>
@@ -118,13 +118,13 @@
      <property name="minimumSize">
       <size>
        <width>0</width>
-       <height>0</height>
+       <height>165</height>
       </size>
      </property>
      <property name="maximumSize">
       <size>
        <width>16777215</width>
-       <height>150</height>
+       <height>220</height>
       </size>
      </property>
      <property name="styleSheet">
@@ -148,7 +148,7 @@
         <property name="maximumSize">
          <size>
           <width>200</width>
-          <height>180</height>
+          <height>250</height>
          </size>
         </property>
         <property name="styleSheet">
@@ -166,12 +166,27 @@ color: #FFFFFF;
          <enum>QFrame::Shadow::Raised</enum>
         </property>
         <layout class="QGridLayout" name="gridLayout_6">
+         <property name="leftMargin">
+          <number>16</number>
+         </property>
+         <property name="topMargin">
+          <number>16</number>
+         </property>
+         <property name="rightMargin">
+          <number>16</number>
+         </property>
+         <property name="bottomMargin">
+          <number>16</number>
+         </property>
+         <property name="horizontalSpacing">
+          <number>16</number>
+         </property>
          <item row="0" column="0" alignment="Qt::AlignmentFlag::AlignHCenter">
           <widget class="QLabel" name="moveTimingImage">
            <property name="maximumSize">
             <size>
-             <width>40</width>
-             <height>40</height>
+             <width>35</width>
+             <height>35</height>
             </size>
            </property>
            <property name="styleSheet">
@@ -191,7 +206,7 @@ color: #FFFFFF;
          <item row="1" column="0">
           <widget class="QLabel" name="labelMoveTimingTItle">
            <property name="styleSheet">
-            <string notr="true">color: white; font-size: 16px; font-weight: bold; margin-left: 10px;
+            <string notr="true">color: white; font-size: 13px; font-weight: bold; margin-left: 10px;
 border-color:transparent;</string>
            </property>
            <property name="text">
@@ -208,7 +223,7 @@ border-color:transparent;</string>
          <item row="2" column="0">
           <widget class="QLabel" name="labelMoveExplication">
            <property name="styleSheet">
-            <string notr="true">color: white; font-size: 16px; 
+            <string notr="true">color: white; font-size: 11px; 
  margin-left: 10px;
 border-color:transparent;</string>
            </property>
@@ -237,7 +252,7 @@ border-color:transparent;</string>
         <property name="maximumSize">
          <size>
           <width>200</width>
-          <height>180</height>
+          <height>250</height>
          </size>
         </property>
         <property name="styleSheet">
@@ -255,10 +270,25 @@ color: #FFFFFF;
          <enum>QFrame::Shadow::Raised</enum>
         </property>
         <layout class="QGridLayout" name="gridLayout_7">
+         <property name="leftMargin">
+          <number>16</number>
+         </property>
+         <property name="topMargin">
+          <number>16</number>
+         </property>
+         <property name="rightMargin">
+          <number>16</number>
+         </property>
+         <property name="bottomMargin">
+          <number>16</number>
+         </property>
+         <property name="horizontalSpacing">
+          <number>16</number>
+         </property>
          <item row="2" column="0">
           <widget class="QLabel" name="labelWinLossExplication">
            <property name="styleSheet">
-            <string notr="true">color: white; font-size: 16px; 
+            <string notr="true">color: white; font-size: 11px; 
  margin-left: 10px;
 border-color:transparent;</string>
            </property>
@@ -276,7 +306,7 @@ border-color:transparent;</string>
          <item row="1" column="0">
           <widget class="QLabel" name="labelWinLossTitle">
            <property name="styleSheet">
-            <string notr="true">color: white; font-size: 16px; font-weight: bold; margin-left: 10px;
+            <string notr="true">color: white; font-size: 13px; font-weight: bold; margin-left: 10px;
 border-color:transparent;</string>
            </property>
            <property name="text">
@@ -294,8 +324,8 @@ border-color:transparent;</string>
           <widget class="QLabel" name="winLossImage">
            <property name="maximumSize">
             <size>
-             <width>40</width>
-             <height>40</height>
+             <width>35</width>
+             <height>35</height>
             </size>
            </property>
            <property name="styleSheet">
@@ -329,7 +359,7 @@ border-color:transparent;</string>
         <property name="maximumSize">
          <size>
           <width>200</width>
-          <height>180</height>
+          <height>250</height>
          </size>
         </property>
         <property name="styleSheet">
@@ -347,10 +377,25 @@ color: #FFFFFF;
          <enum>QFrame::Shadow::Raised</enum>
         </property>
         <layout class="QGridLayout" name="gridLayout_5">
+         <property name="leftMargin">
+          <number>16</number>
+         </property>
+         <property name="topMargin">
+          <number>16</number>
+         </property>
+         <property name="rightMargin">
+          <number>16</number>
+         </property>
+         <property name="bottomMargin">
+          <number>16</number>
+         </property>
+         <property name="horizontalSpacing">
+          <number>16</number>
+         </property>
          <item row="1" column="0" alignment="Qt::AlignmentFlag::AlignHCenter">
           <widget class="QLabel" name="labelOpeningTitle">
            <property name="styleSheet">
-            <string notr="true">color: white; font-size: 16px; font-weight: bold; margin-left: 10px;
+            <string notr="true">color: white; font-size: 13px; font-weight: bold; margin-left: 10px;
 border-color:transparent;</string>
            </property>
            <property name="text">
@@ -365,8 +410,8 @@ border-color:transparent;</string>
           <widget class="QLabel" name="openingImage">
            <property name="maximumSize">
             <size>
-             <width>40</width>
-             <height>40</height>
+             <width>35</width>
+             <height>35</height>
             </size>
            </property>
            <property name="styleSheet">
@@ -389,7 +434,7 @@ border-color:transparent;</string>
          <item row="2" column="0">
           <widget class="QLabel" name="labelOpeningExplication">
            <property name="styleSheet">
-            <string notr="true">color: white; font-size: 16px; 
+            <string notr="true">color: white; font-size: 11px; 
  margin-left: 10px;
 border-color:transparent;</string>
            </property>
@@ -418,7 +463,7 @@ border-color:transparent;</string>
         <property name="maximumSize">
          <size>
           <width>200</width>
-          <height>180</height>
+          <height>250</height>
          </size>
         </property>
         <property name="styleSheet">
@@ -436,10 +481,28 @@ color: #FFFFFF;
          <enum>QFrame::Shadow::Raised</enum>
         </property>
         <layout class="QGridLayout" name="gridLayout_8">
+         <property name="leftMargin">
+          <number>16</number>
+         </property>
+         <property name="topMargin">
+          <number>16</number>
+         </property>
+         <property name="rightMargin">
+          <number>16</number>
+         </property>
+         <property name="bottomMargin">
+          <number>16</number>
+         </property>
+         <property name="horizontalSpacing">
+          <number>16</number>
+         </property>
+         <property name="verticalSpacing">
+          <number>6</number>
+         </property>
          <item row="1" column="0">
           <widget class="QLabel" name="labelComeBackTitle">
            <property name="styleSheet">
-            <string notr="true">color: white; font-size: 16px; font-weight: bold; margin-left: 10px;
+            <string notr="true">color: white; font-size: 13px; font-weight: bold; margin-left: 10px;
 border-color:transparent;</string>
            </property>
            <property name="text">
@@ -457,8 +520,8 @@ border-color:transparent;</string>
           <widget class="QLabel" name="comebackImage">
            <property name="maximumSize">
             <size>
-             <width>40</width>
-             <height>40</height>
+             <width>35</width>
+             <height>35</height>
             </size>
            </property>
            <property name="styleSheet">
@@ -478,7 +541,7 @@ border-color:transparent;</string>
          <item row="2" column="0">
           <widget class="QLabel" name="labelComebackExplication">
            <property name="styleSheet">
-            <string notr="true">color: white; font-size: 16px; 
+            <string notr="true">color: white; font-size: 11px; 
  margin-left: 10px;
 border-color:transparent;</string>
            </property>
@@ -652,7 +715,7 @@ border-color:transparent;</string>
    <item row="4" column="0">
     <widget class="QFrame" name="analyzedPlayersFrame">
      <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>
@@ -670,7 +733,7 @@ border-color:transparent;</string>
       <item row="0" column="0">
        <widget class="QFrame" name="frameAnalyzedPlayer">
         <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>

@@ -44,9 +44,6 @@ public:
     //! Lista actual de jugadores analizados/devueltos por el backend.
     const QList<PlayerInfo> &players() const { return m_players; }
 
-    //! Solicita al backend analizar un nuevo jugador.
-    void analyzePlayer(const QString &username);
-
 signals:
     //! Se emite cuando el estado cambia respecto al anterior.
     void statusChanged(ServerStatusManager::Status newStatus);

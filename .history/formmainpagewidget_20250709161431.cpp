@@ -182,12 +182,6 @@ void FormMainPageWidget::clearFrame(QFrame *frame)
 void FormMainPageWidget::onPlayersUpdated(const QList<PlayerInfo> &players)
 {
     qDebug() << "[FormMainPageWidget] onPlayersUpdated called with" << players.size() << "players";
-    // Primero, si hay jugadores, aseguramos limpiar cualquier placeholder anterior
-    if (!players.isEmpty()) {
-        clearFrame(ui->frameAnalyzedPlayer);
-        m_playerCardMap.clear();
-    }
-
     // Si frame no tiene layout, creamos vertical layout principal
     if (!ui->frameAnalyzedPlayer->layout()) {
         auto *mainLayout = new QVBoxLayout(ui->frameAnalyzedPlayer);

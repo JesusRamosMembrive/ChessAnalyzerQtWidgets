@@ -17,7 +17,6 @@
 #include "playercardwidget.h"
 #include "playerpendingcardwidget.h"
 #include "serverstatusmanager.h"
-#include <algorithm>
 
 
 FormMainPageWidget::FormMainPageWidget(QWidget *parent)
@@ -181,13 +180,6 @@ void FormMainPageWidget::clearFrame(QFrame *frame)
 
 void FormMainPageWidget::onPlayersUpdated(const QList<PlayerInfo> &players)
 {
-    qDebug() << "[FormMainPageWidget] onPlayersUpdated called with" << players.size() << "players";
-    // Primero, si hay jugadores, aseguramos limpiar cualquier placeholder anterior
-    if (!players.isEmpty()) {
-        clearFrame(ui->frameAnalyzedPlayer);
-        m_playerCardMap.clear();
-    }
-
     // Si frame no tiene layout, creamos vertical layout principal
     if (!ui->frameAnalyzedPlayer->layout()) {
         auto *mainLayout = new QVBoxLayout(ui->frameAnalyzedPlayer);
@@ -211,13 +203,11 @@ void FormMainPageWidget::onPlayersUpdated(const QList<PlayerInfo> &players)
 
         if (card) {
             // actualizar tarjeta existente
-            qDebug() << "[FormMainPageWidget] Updating existing card for" << p.username << "status:" << p.status << "progress:" << p.progress;
             if (auto *pending = qobject_cast<PlayerPendingCardWidget *>(card))
                 pending->updateInfo(p);
             // ready card por ahora no requiere updates
         } else {
             // crear nueva tarjeta
-            qDebug() << "[FormMainPageWidget] Creating new card for" << p.username << "status:" << p.status;
             if (p.status.toLower() == "ready") {
                 auto *readyCard = new PlayerCardWidget(p, ui->frameAnalyzedPlayer);
                 connect(readyCard, &PlayerCardWidget::clicked, this, &FormMainPageWidget::onPlayerClicked);
@@ -230,17 +220,6 @@ void FormMainPageWidget::onPlayersUpdated(const QList<PlayerInfo> &players)
             vLayout->insertWidget(vLayout->count() - 1, card); // antes del stretch
             m_playerCardMap.insert(p.username, card);
         }
-    }
-
-    // Eliminar tarjetas que ya no están en la lista
-    QList<QString> toRemove;
-    for (const QString &uname : m_playerCardMap.keys()) {
-        bool exists = std::any_of(players.begin(), players.end(), [&](const PlayerInfo &pi){ return pi.username == uname; });
-        if (!exists) toRemove.append(uname);
-    }
-    for (const QString &uname : toRemove) {
-        QWidget *w = m_playerCardMap.take(uname);
-        if (w) w->deleteLater();
     }
 }
 

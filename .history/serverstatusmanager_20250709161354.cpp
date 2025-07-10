@@ -38,16 +38,7 @@ ServerStatusManager::ServerStatusManager(QObject *parent)
                 } else if (endpoint.startsWith("/players/")) {
                     // Respuesta de polling de un jugador concreto
                     qDebug() << "[ServerStatusManager] Player endpoint response:" << endpoint << data;
-                    // El backend puede devolver el objeto directamente o como array
-                    if (data.contains("array") && data.value("array").isArray()) {
-                        // Si viene como array, tomamos el primer elemento
-                        QJsonArray arr = data.value("array").toArray();
-                        if (!arr.isEmpty() && arr.first().isObject()) {
-                            handlePlayerObject(arr.first().toObject());
-                        }
-                    } else {
-                        handlePlayerObject(data);
-                    }
+                    handlePlayerObject(data);
                 }
             });
 
@@ -99,8 +90,7 @@ void ServerStatusManager::parsePlayersArray(const QJsonArray &arr)
         p.finishedAt  = QDateTime::fromString(obj.value("finished_at").toString(), Qt::ISODate);
         list.append(p);
 
-        const QString sLower = p.status.toLower();
-        if (sLower != "ready" && sLower != "error" && sLower != "failed")
+        if (p.status.toLower() == "pending")
             startPolling(p.username);
         else
             stopPolling(p.username);
@@ -123,7 +113,6 @@ void ServerStatusManager::handlePlayerObject(const QJsonObject &obj)
         if (p.username == user) {
             p.status = obj.value("status").toString();
             p.progress = obj.value("progress").toInt();
-            qDebug() << "[ServerStatusManager] updated progress for" << p.username << p.progress;
             p.totalGames = obj.value("total_games").toInt();
             p.doneGames = obj.value("done_games").toInt();
             p.requestedAt = QDateTime::fromString(obj.value("requested_at").toString(), Qt::ISODate);
@@ -137,7 +126,6 @@ void ServerStatusManager::handlePlayerObject(const QJsonObject &obj)
         p.username = user;
         p.status = obj.value("status").toString();
         p.progress = obj.value("progress").toInt();
-        qDebug() << "[ServerStatusManager] new progress for" << p.username << p.progress;
         p.totalGames = obj.value("total_games").toInt();
         p.doneGames = obj.value("done_games").toInt();
         p.requestedAt = QDateTime::fromString(obj.value("requested_at").toString(), Qt::ISODate);
@@ -146,8 +134,8 @@ void ServerStatusManager::handlePlayerObject(const QJsonObject &obj)
     }
 
     // gestionar timers según nuevo estado
-    const QString statusLower = obj.value("status").toString().toLower();
-    if (statusLower != "ready" && statusLower != "error" && statusLower != "failed")
+    QString status = obj.value("status").toString().toLower();
+    if (status == "pending")
         startPolling(user);
     else
         stopPolling(user);
@@ -158,14 +146,12 @@ void ServerStatusManager::handlePlayerObject(const QJsonObject &obj)
 // -----------------------------------------------------------------------------
 void ServerStatusManager::startPolling(const QString &user)
 {
-    qDebug() << "[ServerStatusManager] startPolling for user:" << user;
     if (m_pollTimers.contains(user))
         return; // ya activo
 
     QTimer *t = new QTimer(this);
     t->setInterval(1000);
     connect(t, &QTimer::timeout, this, [this, user]() {
-        qDebug() << "[ServerStatusManager] Polling timer fired for:" << user;
         m_client.getPlayer(user);
     });
     connect(t, &QObject::destroyed, this, [this, user]() {
@@ -197,7 +183,7 @@ void ServerStatusManager::analyzePlayer(const QString &username)
     for (auto &p : m_players) {
         if (p.username.compare(username, Qt::CaseInsensitive) == 0) {
             found = true;
-            p.status = "queued"; // Changed from "pending" to "queued"
+            p.status = "pending";
             p.progress = 0;
             p.doneGames = 0;
             break;
@@ -206,7 +192,7 @@ void ServerStatusManager::analyzePlayer(const QString &username)
     if (!found) {
         PlayerInfo p;
         p.username = username;
-        p.status = "queued"; // Changed from "pending" to "queued"
+        p.status = "pending";
         p.progress = 0;
         p.totalGames = 0;
         p.doneGames = 0;

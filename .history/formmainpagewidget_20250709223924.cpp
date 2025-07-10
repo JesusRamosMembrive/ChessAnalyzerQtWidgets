@@ -185,7 +185,6 @@ void FormMainPageWidget::onPlayersUpdated(const QList<PlayerInfo> &players)
     // Primero, si hay jugadores, aseguramos limpiar cualquier placeholder anterior
     if (!players.isEmpty()) {
         clearFrame(ui->frameAnalyzedPlayer);
-        m_playerCardMap.clear();
     }
 
     // Si frame no tiene layout, creamos vertical layout principal

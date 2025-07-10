@@ -5,7 +5,6 @@
 #include <QLineEdit>
 #include "serverstatusmanager.h"
 #include <QList>
-#include <QHash>
 
 class QFrame;
 class QHBoxLayout;
@@ -49,8 +48,6 @@ private slots:
 
 private:
     QLineEdit *usernameInput;
-
-    QHash<QString, QWidget*> m_playerCardMap; // username -> card widget
 
     void clearFrame(QFrame *frame);
 };

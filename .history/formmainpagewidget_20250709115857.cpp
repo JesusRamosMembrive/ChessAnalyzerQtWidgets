@@ -15,9 +15,7 @@
 
 #include <QDebug>
 #include "playercardwidget.h"
-#include "playerpendingcardwidget.h"
 #include "serverstatusmanager.h"
-#include <algorithm>
 
 
 FormMainPageWidget::FormMainPageWidget(QWidget *parent)
@@ -45,8 +43,6 @@ FormMainPageWidget::FormMainPageWidget(QWidget *parent)
             ui->pushButtonStartAnalysis->setEnabled(true);
         }
     });
-    connect(ui->pushButtonStartAnalysis, &QPushButton::clicked,
-            this, &FormMainPageWidget::onStartAnalysisClicked);
 }
 
 FormMainPageWidget::~FormMainPageWidget()
@@ -97,8 +93,6 @@ void FormMainPageWidget::showConnectionErrorPlaceholder()
 {
     if (!ui || !ui->frameAnalyzedPlayer)
         return;
-
-    
 
     // Si el frame ya tiene un layout, lo limpiamos
     QLayout *oldLayout = ui->frameAnalyzedPlayer->layout();
@@ -181,82 +175,37 @@ void FormMainPageWidget::clearFrame(QFrame *frame)
 
 void FormMainPageWidget::onPlayersUpdated(const QList<PlayerInfo> &players)
 {
-    qDebug() << "[FormMainPageWidget] onPlayersUpdated called with" << players.size() << "players";
-    // Primero, si hay jugadores, aseguramos limpiar cualquier placeholder anterior
-    if (!players.isEmpty()) {
-        clearFrame(ui->frameAnalyzedPlayer);
-        m_playerCardMap.clear();
-    }
+    // Limpiar contenido anterior
+    clearFrame(ui->frameAnalyzedPlayer);
 
-    // Si frame no tiene layout, creamos vertical layout principal
-    if (!ui->frameAnalyzedPlayer->layout()) {
-        auto *mainLayout = new QVBoxLayout(ui->frameAnalyzedPlayer);
-        mainLayout->setContentsMargins(16, 16, 16, 16);
-        mainLayout->setSpacing(12);
-        mainLayout->addStretch();
-    }
-
-    // Ocultar placeholder si existe
     if (players.isEmpty()) {
         showNoPlayersPlaceholder();
         return;
     }
 
-    // Actualizar/crear tarjetas
-    auto *vLayout = qobject_cast<QVBoxLayout *>(ui->frameAnalyzedPlayer->layout());
-    if (!vLayout) return;
+    auto *layout = new QVBoxLayout(ui->frameAnalyzedPlayer);
+    layout->setContentsMargins(16, 16, 16, 16);
+    layout->setSpacing(12);
 
     for (const auto &p : players) {
-        QWidget *card = m_playerCardMap.value(p.username, nullptr);
-
-        if (card) {
-            // actualizar tarjeta existente
-            qDebug() << "[FormMainPageWidget] Updating existing card for" << p.username << "status:" << p.status << "progress:" << p.progress;
-            if (auto *pending = qobject_cast<PlayerPendingCardWidget *>(card))
-                pending->updateInfo(p);
-            // ready card por ahora no requiere updates
+        QWidget *card = nullptr;
+        if (p.status.toLower() == "ready") {
+            auto *readyCard = new PlayerCardWidget(p, ui->frameAnalyzedPlayer);
+            connect(readyCard, &PlayerCardWidget::clicked, this, &FormMainPageWidget::onPlayerClicked);
+            card = readyCard;
         } else {
-            // crear nueva tarjeta
-            qDebug() << "[FormMainPageWidget] Creating new card for" << p.username << "status:" << p.status;
-            if (p.status.toLower() == "ready") {
-                auto *readyCard = new PlayerCardWidget(p, ui->frameAnalyzedPlayer);
-                connect(readyCard, &PlayerCardWidget::clicked, this, &FormMainPageWidget::onPlayerClicked);
-                card = readyCard;
-            } else {
-                auto *pendingCard = new PlayerPendingCardWidget(p, ui->frameAnalyzedPlayer);
-                connect(pendingCard, &PlayerPendingCardWidget::clicked, this, &FormMainPageWidget::onPlayerClicked);
-                card = pendingCard;
-            }
-            vLayout->insertWidget(vLayout->count() - 1, card); // antes del stretch
-            m_playerCardMap.insert(p.username, card);
+            auto *pendingCard = new PlayerPendingCardWidget(p, ui->frameAnalyzedPlayer);
+            connect(pendingCard, &PlayerPendingCardWidget::clicked, this, &FormMainPageWidget::onPlayerClicked);
+            // Futuro: conectar cancelRequested
+            card = pendingCard;
         }
+        layout->addWidget(card);
     }
 
-    // Eliminar tarjetas que ya no están en la lista
-    QList<QString> toRemove;
-    for (const QString &uname : m_playerCardMap.keys()) {
-        bool exists = std::any_of(players.begin(), players.end(), [&](const PlayerInfo &pi){ return pi.username == uname; });
-        if (!exists) toRemove.append(uname);
-    }
-    for (const QString &uname : toRemove) {
-        QWidget *w = m_playerCardMap.take(uname);
-        if (w) w->deleteLater();
-    }
+    layout->addStretch();
 }
 
 void FormMainPageWidget::onPlayerClicked(const QString &username)
 {
     qDebug() << "Player clicked:" << username;
-}
-
-// -----------------------------------------------------------------------------
-void FormMainPageWidget::onStartAnalysisClicked()
-{
-    const QString user = ui->lineEditNewUser->text().trimmed();
-    if (user.isEmpty()) return;
-
-    ServerStatusManager::instance()->analyzePlayer(user);
-
-    ui->lineEditNewUser->clear();
-    ui->pushButtonStartAnalysis->setEnabled(false);
 }
